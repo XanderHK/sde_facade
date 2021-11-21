@@ -11,5 +11,10 @@ public class Main {
         TheaterLights lights = new TheaterLights("Theater Ceiling Lights");
         Screen screen = new Screen("Theater Screen");
         PopcornPopper popper = new PopcornPopper("Popcorn Popper");
+
+        HomeCinema homeCinema = new HomeCinema(amp, tuner, dvd, cd, projector, lights, screen, popper);
+
+        homeCinema.watchMovie();
+        homeCinema.stopMovie();
     }
 }
